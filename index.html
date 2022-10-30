@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="icon" href="https://img.freepik.com/premium-vector/red-register-now-label-modern-style-white_123447-702.jpg?w=2000">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+     <form class="rf" id="register-form" name="registration form" >
+        
+           <h1>REGISTRATION FORM</h1>
+
+            <div class="first"><label for="First Nmae">First name</label>&nbsp;
+               <input type="text" placeholder="Enter your first name" id="first-name" class="fn" name="r-fn" required autocomplete="off">
+                <div class="valid-feedback" id="first-name-valid">
+                  Looks good!
+              </div>
+              <div class="invalid-feedback" id="first-name-invalid">
+              Please enter valid first name.
+              </div>
+            </div>
+
+          <div class="last"><label for="Last name">Last name</label>&nbsp;
+              <input type="text" placeholder="Enter your last name" id="last-name" class="ln" name="r-ln"required autocomplete="off">
+              <div class="valid-feedback" id="last-name-valid">
+                 Looks good!
+              </div>
+              <div class="invalid-feedback" id="last-name-invalid">
+                 Please enter valid last name.
+              </div>
+            </div>
+          <div class="mail">
+              <label for="email" class="em" >Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter your email" required>
+              <div class="valid-feedback" id="email-valid">
+                  Looks good!
+              </div>
+              <div class="invalid-feedback" id="email-invalid">
+                  Please enter valid email.
+              </div>
+            </div>
+          <div class="mn"><label for="Mobile number">Mobile Number</label>&nbsp;
+             <input type="text" placeholder="Enter your Mobile Number"  id="phone" class="ph" name="r-phno" required autocomplete="off">
+             <div class="valid-feedback" id="Mobile-valid">
+                 Looks good!
+             </div>
+             <div class="invalid-feedback" id="Mobile-invalid">
+                 Please enter valid mobile number.
+             </div>
+            </div>
+          <div class="gend">
+              <label for="gender">Gender</label>&nbsp;
+              <input type="radio" id="male" class="gender" name="gn" value="Male">&nbsp;Male
+              <input type="radio" id="female" class="gender" name="gn" value="Female">&nbsp;Female
+              <input type="radio" id="others" class="gender" name="gn" value="Others">&nbsp;Others
+              <div class="valid-feedback" id="gender-valid">
+                  Looks good!
+              </div>
+              <div class="invalid-feedback" id="gender-invalid">
+                  Please select gender.
+               </div>
+            </div>
+
+          <div class="count"><label for="country" >Country</label>&nbsp;
+              <select id="country" class="country" name="con" required autocomplete="off">
+                 <option selected value="None">Choose...</option>
+                    <option value="Male">India</option>
+                    <option value="Male">USA</option>
+              </select>
+               <div class="valid-feedback" id="country-valid">
+                  Looks good!
+              </div>
+              <div class="invalid-feedback" id="country-invalid">
+                 Please select Country.
+              </div>
+           </div>
+          <div class="btn"> <button type="button" class="btn btn-primary" onclick="return validate()" > submit</button></div>
+     </form>
+
+    <script src="file.js"></script>
+    
+</body>
+</html>

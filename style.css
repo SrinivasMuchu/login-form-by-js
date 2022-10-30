@@ -1,0 +1,19 @@
+
+.rf{
+   color:rgb(0, 0, 0)k;
+    padding: 20px;
+    border:5px solid rgb(0, 0, 0);
+    width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: linear-gradient(0.5turn, #3f87a6, #ebf8e1, #f69d3c);
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 15rem rgb(111, 111, 143));
+    
+}
+h1 {
+  text-shadow: 5px 5px grey;
+}
